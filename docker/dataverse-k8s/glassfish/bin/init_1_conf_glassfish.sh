@@ -123,7 +123,7 @@ env -0 | grep -z -Ee "^(dataverse|doi)_" | while IFS='=' read -r -d '' k v; do
 done
 
 # 4. Stop the domain again (will be started in foreground later)
-asadmin stop-domain
+#asadmin stop-domain
 
 # 5. Symlink the WAR file to autodeploy on real start
 ln -s ${HOME_DIR}/dvinstall/dataverse.war ${DOMAIN_DIR}/autodeploy/dataverse.war
