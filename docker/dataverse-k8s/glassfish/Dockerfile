@@ -121,5 +121,5 @@ COPY --chown=glassfish:glassfish docker/dataverse-k8s/bin/* docker/dataverse-k8s
 RUN mkdir -p ${SCRIPT_DIR}/init.d && \
     chmod +x ${SCRIPT_DIR}/*
 
-#ENTRYPOINT ["/tini", "--"]
+ENTRYPOINT ["/tini", "--"]
 #CMD ["scripts/entrypoint.sh"]
